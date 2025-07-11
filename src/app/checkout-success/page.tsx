@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 };
 
 export default async function Page({ searchParams: { orderId } }: PageProps) {
-  const wixClient = getWixServerClient();
+  const wixClient = await getWixServerClient();
 
   const [order, loggedInMember] = await Promise.all([
-    getOrder(await wixClient, orderId),
-    getLoggedInMember(await wixClient),
+    getOrder(wixClient, orderId),
+    getLoggedInMember(wixClient),
   ]);
 
   if (!order) {
