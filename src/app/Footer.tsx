@@ -9,15 +9,15 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <div className="text-2xl font-bold">Salt & Pepper Wears</div>
             <p className="text-muted-foreground mt-7 text-base leading-relaxed">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              A thoughtfully curated thrift store for timeess fashion and
+              sustainable style
             </p>
 
             <ul className="mt-9 flex items-center space-x-3">
               <li>
                 <a
                   href="#"
-                  title=""
+                  title="twitter"
                   className="bg-foreground text-background hover:bg-primary focus:bg-primary flex size-7 items-center justify-center rounded-full transition-all duration-200"
                 >
                   <svg
@@ -34,7 +34,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  title=""
+                  title="facebook"
                   className="bg-foreground text-background hover:bg-primary focus:bg-primary flex size-7 items-center justify-center rounded-full transition-all duration-200"
                 >
                   <svg
@@ -51,7 +51,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  title=""
+                  title="instagram"
                   className="bg-foreground text-background hover:bg-primary focus:bg-primary flex size-7 items-center justify-center rounded-full transition-all duration-200"
                 >
                   <svg
@@ -67,7 +67,7 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   title=""
@@ -86,7 +86,7 @@ export default function Footer() {
                     ></path>
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -98,7 +98,7 @@ export default function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="/company/about"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
@@ -107,7 +107,7 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   title=""
@@ -127,11 +127,11 @@ export default function Footer() {
                   {" "}
                   Works{" "}
                 </a>
-              </li>
+              </li> */}
 
               <li>
                 <a
-                  href="#"
+                  href="/company/career"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
@@ -150,7 +150,7 @@ export default function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="/help/customer"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
@@ -161,7 +161,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="/help/delivery"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
@@ -172,7 +172,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="/terms"
+                  href="/help/terms"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
@@ -183,7 +183,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="/help/privacy"
                   title=""
                   className="hover:text-primary focus:text-primary flex text-base transition-all duration-200"
                 >
