@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   return {
     title: product.name,
-    description: "Get this product on Flow Shop",
+    description: "Get this product on Salt & Pepper Wears Shop",
     openGraph: {
       images: mainImage?.url
         ? [

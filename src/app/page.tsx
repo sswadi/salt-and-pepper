@@ -1,5 +1,5 @@
 import Image from "next/image";
-import banner from "@/assets/banner.jpg";
+import banner from "@/assets/banner1.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -13,14 +13,15 @@ import { getWixServerClient } from "@/lib/wix-client.server";
 export default function Home() {
   return (
     <main className="mx-auto max-w-7xl space-y-10 px-5 py-10">
-      <div className="bg-secondary flex items-center md:h-96">
+      <div className="flex items-center bg-stone-100 md:h-96">
         <div className="space-y-7 p-10 text-center md:w-1/2">
-          <h1 className="md:text-4xls text-3xl font-bold">
-            Fill the void in your heart
+          {/* <h1 className="md:text-4xls text-3xl font-bold"> */}
+          <h1 className="font-serif text-3xl font-light text-gray-700">
+            Timeless Finds, Thoughtfully Curated
           </h1>
-          <p>
-            Tough day? Credit card maxed out? Buy some stuff from our store and
-            become happy again!
+          <p className="font-serif font-light text-gray-700">
+            Discover vintage treasures and classic styles at Salt & Pepper Wears
+            a thrift shop where every piece has a story.
           </p>
           <Button asChild>
             <Link href="/shop">
@@ -31,7 +32,7 @@ export default function Home() {
         <div className="relative hidden h-full w-1/2 md:block">
           <Image
             src={banner}
-            alt="Salt and Pepper Banner Image"
+            alt="Salt & Pepper Banner Image"
             className="h-full object-cover"
           />
           <div className="from-secondary absolute inset-0 bg-gradient-to-r via-transparent to-transparent" />

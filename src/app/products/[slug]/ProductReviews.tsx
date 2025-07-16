@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo2.png";
 import LoadingButton from "@/components/LoadingButton";
 import { Skeleton } from "@/components/ui/skeleton";
 import WixImage from "@/components/WixImage";
@@ -122,12 +122,12 @@ function Review({
             <CornerDownRight className="size-5" />
             <Image
               src={logo}
-              alt="Flow Store logo"
+              alt="Salt & Pepper Wears logo"
               width={24}
               height={24}
-              className="size-5"
+              className="size-6 rounded-sm object-fill"
             />
-            <span className="font-bold">Flow Shop Team</span>
+            <span className="font-bold">Salt & Pepper Wears Team</span>
           </div>
           <div className="whitespace-pre-line">{reply.message}</div>
         </div>

@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo2.png";
 import { getWixServerClient } from "@/lib/wix-client.server";
 import { getCart } from "@/wix-api/cart";
 import Image from "next/image";
@@ -22,23 +22,30 @@ export default async function Navbar() {
   ]);
 
   return (
-    <header className="bg-background shadow-sm">
-      <div className="mx-auto flex max-w-2xl items-center justify-between gap-5 p-5">
+    <header className="bg-background sticky top-0 z-50 shadow-sm backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 p-5">
         <Suspense>
           <MobileMenu
             collections={collections}
             loggedInMember={loggedInMember}
           />
         </Suspense>
-        <div className="flex flex-wrap items-center gap-5">
-          <Link href="/" className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-7">
+          <Link href="/" className="flex flex-col items-center gap-2">
             <Image
               src={logo}
-              alt="Salt and Pepper logo"
-              width={40}
-              height={40}
+              alt="Salt & Pepper logo"
+              width={80}
+              height={90}
+              className="rounded-2xl"
             />
-            <span className="text-xl font-bold">Salt and Pepper Shop</span>
+
+            {/* <span className="font-mono text-xl font-medium text-slate-800">
+              Salt & Pepper Wears
+            </span> */}
+            <span className="font-serif text-xs font-light text-gray-700">
+              Salt & Pepper Wears
+            </span>
           </Link>
           <MainNavigation
             collections={collections}

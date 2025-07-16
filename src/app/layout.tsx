@@ -10,8 +10,8 @@ import { ThemeProvider } from "next-themes";
 const lora = Lora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
-    template: "%s | Salt and Pepper",
-    absolute: "Salt and Pepper",
+    template: "%s | Salt & Pepper Wears",
+    absolute: "Salt & Pepper Wears",
   },
   description:
     "A thrift shop for environmentally conscious individuals, offering curated secondhand fashion and sustainable lifestyle products",

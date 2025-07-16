@@ -112,7 +112,7 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
               selectedOptions={selectedOptions}
               quantity={quantity}
               disabled={availableQuantityExceeded || quantity < 1}
-              className="w-full"
+              // className="w-full"
             />
             <BuyNowButton
               product={product}
